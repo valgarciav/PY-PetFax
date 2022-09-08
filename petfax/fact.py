@@ -9,7 +9,7 @@ def index():
         print(request.form)
         return redirect('/facts')
 
-    return 'This is the facts index'
+    return render_template('facts/index.html')
 
 
 @bp.route('/new')
